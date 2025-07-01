@@ -18,7 +18,7 @@ jobs:
         with:
           inlineScript: |
             az storage blob upload-batch --account-name ${{ secrets.stephenwebsite }} \
-            --account-key ${{ secrets.QVuJ4M/Y1inPVNVORl/QVtPhvdRqTWiV5FrrDIUjcCxlZcQgFCjFvSvQ8T5GgHns+ALA7VO7RfOF+AStTsqrAQ== }} \
+            --account-key ${{ secrets.AZURE_STORAGE_ACCOUNT_KEY}} \
             --destination '$web' \
             --source '.' \
             --overwrite
