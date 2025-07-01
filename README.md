@@ -1,2 +1,2 @@
 # website
-<a href="index.html">Website starts here</a>
+<a href="docs/index.html">Website starts here</a>
