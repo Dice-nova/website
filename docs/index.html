@@ -60,6 +60,8 @@
         <li>When updating the website, a pipeline has been implemented through visual studio code into github then Azure</li>
         <li>I've linked both internal and external links as well as an email link</li>
     </ul>
+    <button id="myButton">Hover Over Me</button>
+    <div id="myPopup"></div>
 </section>
 <section>
     <h2>Projects</h2>
@@ -94,7 +96,25 @@
         <a href = "https://github.com/Dice-nova">https://github.com/Dice-nova</a></p>
     <p><a href="https://learn.microsoft.com/en-gb/users/stephenjones-0322/">Microsoft Learn certifications</a></p>
 </section>
+<script>
+    const button = document.getElementById('myButton');
+    const popup = document.getElementById('myPopup');
 
+    button.addEventListener('click', () => {
+    popup.style.display = 'block';
+    });
+
+    // Add a close button to the popup (optional):
+    const closeButton = document.createElement('button');
+    closeButton.textContent = 'Close';
+    closeButton.onclick = () => (popup.style.display = 'none');
+    popup.appendChild(closeButton);
+
+    // Add text content to the popup
+    const popupText = document.createElement('p');
+    popupText.textContent = 'This is the popup text!';
+    popup.appendChild(popupText);
+</script>
 <footer>
     <p>&copy; 2025 Stephen Jones. All rights reserved.</p>
 </footer>
