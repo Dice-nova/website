@@ -10,9 +10,9 @@
   transition: background-color 0.5s ease; /* Smooth transition */
 }
 
-#myButton:hover {
+/*#myButton:hover {
   background-color: #008CBA; /* Blue */
-}
+/*}
 
 /* Style for the pop-up box */
 #myPopup {
